@@ -32,8 +32,7 @@ select = [
 	"UP",  # pyupgrade
 	"W",  # pycodestyle Warning
 ]
-[[mccabe]]
-max-complexity = 15
+mccabe.max-complexity = 15
 
 [format]
 line-ending = "auto"
