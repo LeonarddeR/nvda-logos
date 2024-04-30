@@ -9,11 +9,16 @@ exclude = [  # don't bother looking in the following subdirectories / files.
 	".git",
 	"__pycache__",
 ]
+line-length = 110
+#preview = true
+show-source = true
+src = ["addon"]
+target-version = "py37"
+
+[lint]
 ignore = [
 	"W191",  # indentation contains tabs
 ]
-line-length = 110
-#preview = true
 select = [
 	"A",  # flake8-builtins
 	"ARG",  # flake8-unused-arguments 
@@ -27,11 +32,7 @@ select = [
 	"UP",  # pyupgrade
 	"W",  # pycodestyle Warning
 ]
-show-source = true
-src = ["addon"]
-target-version = "py37"
-
-[mccabe]
+[[mccabe]]
 max-complexity = 15
 
 [format]
